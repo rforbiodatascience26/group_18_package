@@ -1,0 +1,53 @@
+---
+title: "group_18_package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{group_18_package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(dawgma)
+```
+
+---
+link to gitHub: https://github.com/rforbiodatascience26/group_18_package/tree/master 
+
+DNA_create() makes a random DNA string and takes the DNA string length as an argument.
+```{r}
+DNA_str <- DNA_create(27)
+DNA_str
+```
+
+DNA_to_RNA() takes a string of DNA and transforms it to RNA
+```{r}
+RNA_str <- DNA_to_RNA(DNA_str)
+RNA_str
+```
+
+codon() takes an string and splits it up in codons.
+```{r}
+codon_vector <- codon(RNA_str)
+codon_vector
+```
+
+translate_codons() takes a vector of codon strings and translates it to amino acids. It returns a string of amino acids.
+
+```{r}
+aminoacids <- translate_codons(codon_vector)
+aminoacids
+```
+
+plot_aa() takes a string of aminoacids and plots their frequency in the string.
+```{r}
+plot_aa(aminoacids)
+```
+
