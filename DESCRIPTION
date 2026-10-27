@@ -7,6 +7,11 @@ Authors@R: c(
       "Luna", "Thorhauge",
       email = "s245934@dtu.dk",
       role = c("aut", "cre")
+    ),
+    person(
+      "Alisha", "Goandal",
+      email = "s244321@dtu.dk",
+      role = c("aut")
     )
   )
 Description: Central daogma
