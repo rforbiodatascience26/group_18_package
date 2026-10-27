@@ -1,0 +1,15 @@
+Package: dawgma
+Type: Package
+Title: DAWGMA
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Luna", "Thorhauge",
+      email = "s245934@dtu.dk",
+      role = c("aut", "cre")
+    )
+  )
+Description: Central daogma
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
