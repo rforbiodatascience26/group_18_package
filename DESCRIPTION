@@ -14,10 +14,13 @@ Authors@R: c(
       role = c("aut")
     )
   )
-Description: Central daogma
+Description: Central dawgma.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends: 
     R (>= 3.5)
-RoxygenNote: 7.3.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.1
